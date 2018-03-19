@@ -1,0 +1,85 @@
+@grey: #B0B0B0;
+@white: white;
+@ec: #ececec;
+@line: #b1b1b1;
+@red: #F3683F;
+@splab: #E5891C;
+@black: black;
+@orange: orange;
+@touming: transparent;
+@background: #142138;
+@lineshadow: rgba(7,127,185,.8);
+@bordercolor: rgba(58,112,157,0.60);
+@defaulttextcolor:#69bcd7;
+
+//颜色块
+@firstcolor:#1375ca;
+@secondcolor:#ffa823;
+@thirdcolor:#ff534a;
+@fourcolor:#16d9ff;
+@fivecolor:#0c5c8d;
+@elecolor: rgba(57,138,219,1);
+
+//竖排间隙
+@interval :.075rem;
+//横排间隙
+@smallinterval : 0.05rem;
+@firstheight: .315rem;
+@secondheight: .45rem;
+@border:.005rem;
+
+@bigfont: 0.125rem;
+@midfont: .1rem;
+@titledefaultfont:.04rem;
+@contentdefaultfont:.037rem;
+
+.ztys (@ztys:@white) {
+  color: @ztys;
+}
+.bj (@bj:@background) {
+  background: @bj;
+}
+.bk (@width: .04rem, @color: @grey, @radius: .1rem){
+  border: @width solid @color;
+  border-radius: @radius;
+}
+.midlab (@font: .32rem,@color: black) {
+  font-size: @font;
+  color: @color;
+}
+.shadow-lower-right(@x: .02rem, @y: .02rem, @width: .1rem, @shadowcolor:@lineshadow){
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+.flexlab (@display: flex,@justify:center,@align:center) {
+  display: @display;
+  justify-content: @justify;
+  align-items: @align;
+}
+.boxlab (@display: -webkit-box,@pack:center,@orient:horizontal,@align:center){
+  display: @display;
+  -webkit-box-pack: @pack;
+  -webkit-box-orient: @orient;
+  -webkit-box-align: @align;
+}
+
+.LabColor{
+  background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#85d4e6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.SecondColor{
+  background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#d6f9ff), to(#5fb7d3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Newperson_bottom{
+  background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#81EBFF), to(#1089DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Second_title{
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 93, 167, 1)), to(rgba(1, 93, 164, 0)));
+}
