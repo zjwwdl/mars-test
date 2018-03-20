@@ -4,6 +4,7 @@ import mars from './mars.less'
 import Header from '../module/jin_header'
 import Lanjiazai from '../module/Lanjiazai/jin_lanjiazai'
 import Music from '../module/Music/jin_music'
+import Zmage from '../module/Zmage/jin_zmage'
 
 class IndexPage extends React.Component {
   //生命周期
@@ -61,7 +62,7 @@ class IndexPage extends React.Component {
             <Music info={this.state.songInfo}/>
           </div>
           <div className={mars.mars_s_threesection}>
-
+            <Zmage/>
           </div>
           <div className={mars.mars_s_foursection}>
 
